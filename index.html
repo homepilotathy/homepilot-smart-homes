@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101b2d">
+<meta name="description" content="HomePilot Smart Homes provides practical residential automation in Athy, Kildare and nearby areas: Home Assistant, smart lighting, sensors, motorised blinds and custom routines.">
+<title>HomePilot Smart Homes | Home Automation in Kildare</title>
+<style>
+:root{--navy:#101b2d;--navy2:#17263d;--mint:#a9f2d0;--white:#f8fafc;--muted:#b8c5d6;--line:rgba(255,255,255,.13);--ink:#172033;--green:#21795e}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--white);background:var(--navy);line-height:1.6}a{color:inherit;text-decoration:none}button,a{-webkit-tap-highlight-color:transparent}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(16,27,45,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.03em}.brand-mark{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:var(--mint);color:var(--navy);font-size:24px}.brand span small{display:block;font-size:10px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin-top:-3px}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--mint)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;background:var(--mint);color:var(--navy);font-weight:800;border:1px solid transparent;transition:transform .2s,background .2s;cursor:pointer}.btn:hover{transform:translateY(-2px);background:#c6f8e0}.btn.ghost{background:transparent;color:var(--white);border-color:var(--line)}.btn.ghost:hover{border-color:var(--mint);color:var(--mint)}
+.hero{padding:82px 0 72px;overflow:hidden;position:relative}.hero:before{content:"";position:absolute;width:570px;height:570px;border-radius:50%;right:-160px;top:-150px;background:radial-gradient(circle,rgba(87,204,166,.16),transparent 68%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--mint);font-weight:800;font-size:12px;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:23px;height:2px;background:var(--mint)}h1{font-size:clamp(42px,5.5vw,68px);line-height:1.04;letter-spacing:-.055em;margin:21px 0 22px;max-width:700px}h1 em{font-style:normal;color:var(--mint)}.hero p{font-size:18px;color:var(--muted);max-width:570px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.micro{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px;margin-top:25px}.micro .dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px rgba(169,242,208,.1)}
+.dashboard{background:linear-gradient(145deg,#1c2d46,#111e31);border:1px solid rgba(255,255,255,.14);border-radius:25px;padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.28);transform:rotate(1deg)}.dash-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:22px}.dash-title{font-weight:800}.status{font-size:10px;color:var(--mint);background:rgba(169,242,208,.1);padding:6px 9px;border-radius:99px;white-space:nowrap}.house{height:185px;display:grid;place-items:center;position:relative;background:radial-gradient(ellipse at center,rgba(169,242,208,.13),transparent 60%);border-radius:18px}.house svg{width:86%;max-height:185px}.float{position:absolute;background:#233751;border:1px solid rgba(255,255,255,.12);padding:10px 13px;border-radius:12px;font-size:12px;box-shadow:0 12px 24px #0b1423}.float b{display:block;font-size:13px}.float span{color:var(--mint)}.float.one{top:18px;left:0}.float.two{right:0;bottom:16px}.device-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}.device{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:13px;padding:13px 10px}.device .ico{font-size:20px}.device b{display:block;font-size:12px;margin-top:6px}.device small{color:var(--muted);font-size:10px}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0;color:var(--muted);font-size:13px}.trust-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.trust strong{color:var(--white);font-size:14px}
+section{padding:80px 0}.section-top{max-width:670px;margin-bottom:38px}.section-top h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.04em;line-height:1.12;margin:13px 0}.section-top p{color:var(--muted);margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:25px;border-radius:18px;background:var(--navy2);border:1px solid var(--line);min-height:220px}.service .icon{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:rgba(169,242,208,.1);font-size:23px}.service h3{font-size:18px;margin:18px 0 8px}.service p{font-size:14px;color:var(--muted);margin:0}
+.demo{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.demo-card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--navy2)}.demo-art{height:150px;display:grid;place-items:center;background:radial-gradient(circle at 50% 80%,rgba(169,242,208,.2),transparent 60%),linear-gradient(135deg,#203650,#132238);font-size:54px}.demo-content{padding:20px}.demo-content .tag{font-size:10px;letter-spacing:.12em;color:var(--mint);font-weight:800;text-transform:uppercase}.demo-content h3{margin:8px 0;font-size:18px}.demo-content p{margin:0;color:var(--muted);font-size:14px}.notice{font-size:12px;color:var(--muted);margin-top:18px;padding:12px 15px;border-left:2px solid var(--mint);background:rgba(255,255,255,.035)}
+.split{background:#f2f6f7;color:var(--ink)}.split .eyebrow{color:var(--green)}.split .eyebrow:before{background:var(--green)}.split .section-top p{color:#566579}.split-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.checklist{display:grid;gap:13px}.check{display:flex;gap:13px;align-items:flex-start;background:white;border:1px solid #e0e8e8;padding:16px;border-radius:14px}.check-mark{flex:none;width:25px;height:25px;display:grid;place-items:center;background:#d9f7e9;color:#176448;border-radius:8px;font-weight:900}.check b{display:block;margin-bottom:2px}.check span{font-size:13px;color:#647184}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{border-top:1px solid var(--line);padding-top:20px}.step-num{color:var(--mint);font-size:12px;font-weight:800;letter-spacing:.15em}.step h3{font-size:20px;margin:10px 0 8px}.step p{color:var(--muted);font-size:14px;margin:0}
+.cta{padding:0 0 85px}.cta-card{border-radius:25px;padding:45px;background:linear-gradient(120deg,#203b50,#183b39);border:1px solid rgba(169,242,208,.25);display:flex;justify-content:space-between;align-items:center;gap:30px}.cta-card h2{font-size:clamp(29px,4vw,42px);letter-spacing:-.04em;line-height:1.1;margin:12px 0}.cta-card p{color:#c1d5d8;margin:0;max-width:550px}
+footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:var(--white)}.foot a:hover{color:var(--mint)}
+@media(max-width:800px){.navlinks{display:none}.hero{padding:58px 0}.hero-grid,.split-grid{grid-template-columns:1fr;gap:35px}.dashboard{max-width:500px;margin:auto;width:100%}.services,.demo{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr;gap:27px}.cta-card{padding:30px;align-items:flex-start;flex-direction:column}section{padding:62px 0}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.nav{height:66px}.nav>.btn{padding:10px 12px;font-size:12px}.brand{font-size:14px}.brand-mark{width:34px;height:34px}.hero p{font-size:16px}.services,.demo{grid-template-columns:1fr}.service{min-height:0}.device-grid{gap:7px}.device{padding:10px 7px}.device b{font-size:11px}.float{font-size:10px;padding:8px 10px}.float b{font-size:12px}.cta-card{padding:25px}.dash-title{font-size:13px}.status{font-size:9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="HomePilot home"><span class="brand-mark">⌂</span><span>HomePilot<small>SMART HOMES</small></span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#services">Services</a><a href="#projects">Demo projects</a><a href="#approach">How it works</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#contact">Get a quote <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Smart home automation · Athy & Kildare</div>
+        <h1>A smarter home.<br><em>Made for your life.</em></h1>
+        <p>Thoughtful home automation that makes everyday life easier — from smart lighting and motion sensors to automated blinds and Home Assistant dashboards.</p>
+        <div class="actions"><a class="btn" href="#contact">Plan your smart home <span>↗</span></a><a class="btn ghost" href="#services">Explore services</a></div>
+        <div class="micro"><span class="dot"></span> Practical solutions designed around your home and budget.</div>
+      </div>
+      <div class="dashboard" aria-label="Illustration of a smart home control dashboard">
+        <div class="dash-head"><div class="dash-title">Your home, connected</div><div class="status">● SMART HOME CONCEPT</div></div>
+        <div class="house">
+          <div class="float one">Living room <b>Lights <span>● On</span></b></div>
+          <svg viewBox="0 0 360 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimal line illustration of a connected house">
+            <path d="M44 91L180 20L316 91" stroke="#A9F2D0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M68 82V164H292V82" stroke="#D6E4F0" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M146 164V111C146 91 160 79 180 79C200 79 214 91 214 111V164" stroke="#A9F2D0" stroke-width="3"/>
+            <rect x="87" y="102" width="38" height="35" rx="3" stroke="#D6E4F0" stroke-width="3"/>
+            <path d="M106 102V137M87 119H125" stroke="#D6E4F0" stroke-width="2"/>
+            <rect x="235" y="102" width="38" height="35" rx="3" stroke="#D6E4F0" stroke-width="3"/>
+            <path d="M254 102V137M235 119H273" stroke="#D6E4F0" stroke-width="2"/>
+            <path d="M180 33V49" stroke="#A9F2D0" stroke-width="3" stroke-linecap="round"/><circle cx="180" cy="57" r="5" fill="#A9F2D0"/>
+          </svg>
+          <div class="float two">Hallway <b>Motion <span>● Detected</span></b></div>
+        </div>
+        <div class="device-grid">
+          <div class="device"><div class="ico">💡</div><b>Smart lights</b><small>Scenes & schedules</small></div>
+          <div class="device"><div class="ico">🪟</div><b>Motorised blinds</b><small>Daily routines</small></div>
+          <div class="device"><div class="ico">⌂</div><b>Home Assistant</b><small>One control centre</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="trust"><div class="wrap trust-inner"><strong>Useful automation, not complicated gadgets.</strong><span>Lighting & sensors</span><span>Blinds & routines</span><span>Home Assistant</span><span>Friendly handover</span></div></div>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-top"><div class="eyebrow">What I can help with</div><h2>Small upgrades. A home that works smarter.</h2><p>Start with one room or build a connected setup over time. The goal is reliable automation that fits the way you already live.</p></div>
+      <div class="services">
+        <article class="service"><div class="icon">💡</div><h3>Smart lighting</h3><p>Automate lights by time, motion, or your preferred routines. Create scenes for evenings, mornings, and when you leave home.</p></article>
+        <article class="service"><div class="icon">👣</div><h3>Motion & door sensors</h3><p>Make hallways and stairs light up when needed, and create useful automations based on movement or doors opening.</p></article>
+        <article class="service"><div class="icon">🪟</div><h3>Motorised blinds</h3><p>Set schedules and simple routines for your blinds, with controls that are easy for everyone at home to use.</p></article>
+        <article class="service"><div class="icon">⌂</div><h3>Home Assistant setup</h3><p>Bring compatible devices into one dashboard and create automations across supported smart-home brands.</p></article>
+        <article class="service"><div class="icon">🎙️</div><h3>Voice & mobile control</h3><p>Connect supported devices to voice assistants and make everyday controls easy from your phone or tablet.</p></article>
+        <article class="service"><div class="icon">🛠️</div><h3>Troubleshooting & tidy-up</h3><p>Get help with unreliable automations, device connections, Wi-Fi coverage planning, and making an existing setup simpler.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-top"><div class="eyebrow">Ideas in action</div><h2>Demo projects for everyday living.</h2><p>Explore examples of the kind of routines that can make a home more comfortable, convenient, and connected.</p></div>
+      <div class="demo">
+        <article class="demo-card"><div class="demo-art" aria-hidden="true">💡</div><div class="demo-content"><div class="tag">Demo concept 01</div><h3>Welcome-home lighting</h3><p>Motion sensors trigger hallway lighting after dark, then switch it off after a period without movement.</p></div></article>
+        <article class="demo-card"><div class="demo-art" aria-hidden="true">🪟</div><div class="demo-content"><div class="tag">Demo concept 02</div><h3>Blinds on a routine</h3><p>Open or close compatible motorised blinds together using a simple voice command or scheduled routine.</p></div></article>
+        <article class="demo-card"><div class="demo-art" aria-hidden="true">⌂</div><div class="demo-content"><div class="tag">Demo concept 03</div><h3>One smart-home dashboard</h3><p>Bring supported lights, sensors, and other devices into a clear Home Assistant dashboard.</p></div></article>
+      </div>
+      <p class="notice">These are illustrative demonstration concepts, not claims of completed customer installations. Device compatibility and results depend on each home's equipment and network.</p>
+    </div>
+  </section>
+  <section class="split" id="about">
+    <div class="wrap split-grid">
+      <div class="section-top"><div class="eyebrow">Practical by design</div><h2>Smart technology should make life simpler.</h2><p>No need to automate everything at once. We can begin with the everyday annoyance you most want to solve, then build from there.</p></div>
+      <div class="checklist">
+        <div class="check"><div class="check-mark">✓</div><div><b>Built around your needs</b><span>Solutions chosen for your routines, home layout, and budget.</span></div></div>
+        <div class="check"><div class="check-mark">✓</div><div><b>Clear, understandable controls</b><span>Simple dashboards and automations you can manage yourself.</span></div></div>
+        <div class="check"><div class="check-mark">✓</div><div><b>Step-by-step approach</b><span>Start small, test it properly, and expand only when it makes sense.</span></div></div>
+        <div class="check"><div class="check-mark">✓</div><div><b>Friendly handover</b><span>Understand how your setup works and what to do if something changes.</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="approach">
+    <div class="wrap">
+      <div class="section-top"><div class="eyebrow">How it works</div><h2>From “I wish this happened automatically” to done.</h2><p>A straightforward process, with no pressure to buy a whole house full of gadgets.</p></div>
+      <div class="steps">
+        <div class="step"><div class="step-num">STEP 01</div><h3>Tell me what you need</h3><p>We discuss your home, the devices you already own, and the task you want to automate.</p></div>
+        <div class="step"><div class="step-num">STEP 02</div><h3>Plan a sensible setup</h3><p>You get a clear proposal for compatible devices, the automation logic, and the work involved.</p></div>
+        <div class="step"><div class="step-num">STEP 03</div><h3>Set up & test</h3><p>We configure the agreed solution, test real-life scenarios, and walk through how to use it.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta" id="contact">
+    <div class="wrap"><div class="cta-card"><div><div class="eyebrow">Athy · Kildare · Surrounding areas</div><h2>What would you like your home to do?</h2><p>Tell me about the everyday task you’d love to automate. Get in touch to discuss an idea, an existing setup, or a first smart-home project.</p></div><div class="actions"><a class="btn" href="mailto:homepilot.athy@gmail.com?subject=HomePilot%20Smart%20Home%20Enquiry&body=Hi%20HomePilot%2C%0A%0AI%27d%20like%20to%20discuss%20a%20smart%20home%20automation%20project.%0A%0AMy%20location%3A%0AWhat%20I%27d%20like%20to%20automate%3A%0ADevices%20I%20already%20have%3A%0A%0AThank%20you.">Email for a quote <span>↗</span></a><a class="btn ghost" href="tel:+353830825806">Call +353 83 082 5806</a></div></div></div>
+  </section>
+</main>
+<footer><div class="wrap foot"><div><strong>HomePilot Smart Homes</strong><br>Residential automation in Athy, Kildare & surrounding areas.<br><a href="mailto:homepilot.athy@gmail.com">homepilot.athy@gmail.com</a> · <a href="tel:+353830825806">+353 83 082 5806</a></div><div>© <span id="year">2026</span> HomePilot Smart Homes<br>Independent smart-home service.</div></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
